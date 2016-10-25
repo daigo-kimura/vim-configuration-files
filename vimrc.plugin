@@ -1,0 +1,57 @@
+""""""""""""""""""
+" NeoBundle Setting
+"""""""""""""""""""
+
+call neobundle#begin(expand('~/.vim/bundle/'))
+
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'scrooloose/nerdtree'
+
+" Solarized ColorScheme
+NeoBundle 'altercation/vim-colors-solarized'
+
+
+" HTML Tool
+NeoBundle 'mattn/emmet-vim'
+let g:user_emmet_leader_key='<c-t>'
+
+" CommentOut
+NeoBundle 'tomtom/tcomment_vim'
+
+"Syntax check
+NeoBundle 'scrooloose/syntastic'
+
+" %キーでhtmlの対応するタグにジャンプ
+NeoBundle 'tmhedberg/matchit'
+
+" blade.php用indent
+NeoBundle 'xsbeats/vim-blade'
+
+" 連打対応
+" ウィンドウサイズのマッピングは以下
+NeoBundle 'kana/vim-submode'
+
+NeoBundle 'Shougo/unite.vim'
+
+NeoBundle 'davidhalter/jedi-vim'
+
+" テンプレート
+" NeoBundle 'aperezdc/vim-template'
+
+call neobundle#end()
+
+filetype plugin indent on
+
+" Installation check.
+if neobundle#exists_not_installed_bundles()
+    echomsg 'Not installed bundles : '
+                " \ string(neobundle#get_not_installed_bundle_names())
+    echomsg 'Please execute ":NeoBundleInstall" command.'
+    "finish
+endif
+
+NeoBundleCheck "インストールされていないプラグインをチェック
+
+"""""""""""""""""""""""
+" End NeoBundle Settings
+"""""""""""""""""""""""
