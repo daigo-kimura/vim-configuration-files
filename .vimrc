@@ -1,7 +1,9 @@
 set runtimepath+=~/.vim/bundle/neobundle.vim/
-source ~/.vim/vimrc.plugin
-source ~/.vim/vimrc.template
-source ~/.vim/vimrc.general
+source ~/.vim/vimrc/plugin.vim
+source ~/.vim/vimrc/template.vim
+source ~/.vim/vimrc/general.vim
+source ~/.vim/vimrc/filetype.vim
+
 "カーソル
 " let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 " let &t_EI = "\<Esc>]50;CursorShape=0\x7"
@@ -36,6 +38,6 @@ function! s:GetHighlight(hi)
   return hl
 endfunction
 
-source ~/.vim/vimrc.indent
-source ~/.vim/vimrc.keymapping
-source ~/.vim/vimrc.appearance
+source ~/.vim/vimrc/indent.vim
+source ~/.vim/vimrc/keymapping.vim
+source ~/.vim/vimrc/appearance.vim
