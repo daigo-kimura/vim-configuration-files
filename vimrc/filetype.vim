@@ -5,4 +5,5 @@ augroup filetypedetect
     au BufRead,BufNewFile *.swift setfiletype swift
     au BufRead,BufNewFile *.blade.php setfiletype php
     au BufRead,BufNewFile *.md set filetype=markdown
+    au BufRead,BufNewFile *.swi set filetype=prolog
 augroup END
