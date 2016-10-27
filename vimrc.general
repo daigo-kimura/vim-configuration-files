@@ -42,8 +42,5 @@ set noswapfile
 "ビーブ音オフ
 set visualbell t_vb=
 
-" filetype プラグインによる indent を on にする
-filetype plugin indent on
-
 " Rubyが重いときこれやったら軽くなった
 set re=1

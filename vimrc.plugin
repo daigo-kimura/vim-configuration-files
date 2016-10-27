@@ -31,9 +31,7 @@ call dein#add('xsbeats/vim-blade')
 call dein#add('plasticboy/vim-markdown')
 call dein#add('kannokanno/previm')
 call dein#add('tyru/open-browser.vim')
-au BufRead, BufNewFile *.md set filetype=markdown
 " :PrevimOpen
-" でmarkdownのプレビュー
 
 call dein#end()
 
