@@ -1,57 +1,30 @@
-""""""""""""""""""
-" NeoBundle Setting
-"""""""""""""""""""
+if &compatible
+  set nocompatible
+endif
+set runtimepath+=~/.vim/dein.vim/
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+call dein#begin(expand('~/.vim/dein'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'scrooloose/nerdtree'
+call dein#add('Shougo/dein.vim')
+call dein#add('Shougo/neocomplete.vim')
+call dein#add('Sougo/unite-vim')
+call dein#add('kana/vim-submode')
+call dein#add('davidhalter/jedi-vim')
+
+" call dein#add('mattn/emmet-vim')
+" let g:user_emmet_leader_key='<c-t>'
+call dein#add('tomtom/tcomment_vim')
+
+" "Syntax check
+call dein#add('scrooloose/syntastic')
+call dein#add('scrooloose/nerdtree')
 
 " Solarized ColorScheme
-NeoBundle 'altercation/vim-colors-solarized'
-
-
-" HTML Tool
-NeoBundle 'mattn/emmet-vim'
-let g:user_emmet_leader_key='<c-t>'
-
-" CommentOut
-NeoBundle 'tomtom/tcomment_vim'
-
-"Syntax check
-NeoBundle 'scrooloose/syntastic'
-
-" %キーでhtmlの対応するタグにジャンプ
-NeoBundle 'tmhedberg/matchit'
-
+call dein#add('altercation/vim-colors-solarized')
+"
+" " %キーでhtmlの対応するタグにジャンプ
+call dein#add('tmhedberg/matchit')
 " blade.php用indent
-NeoBundle 'xsbeats/vim-blade'
+call dein#add('xsbeats/vim-blade')
 
-" 連打対応
-" ウィンドウサイズのマッピングは以下
-NeoBundle 'kana/vim-submode'
-
-NeoBundle 'Shougo/unite.vim'
-
-NeoBundle 'davidhalter/jedi-vim'
-
-" テンプレート
-" NeoBundle 'aperezdc/vim-template'
-
-call neobundle#end()
-
-filetype plugin indent on
-
-" Installation check.
-if neobundle#exists_not_installed_bundles()
-    echomsg 'Not installed bundles : '
-                " \ string(neobundle#get_not_installed_bundle_names())
-    echomsg 'Please execute ":NeoBundleInstall" command.'
-    "finish
-endif
-
-NeoBundleCheck "インストールされていないプラグインをチェック
-
-"""""""""""""""""""""""
-" End NeoBundle Settings
-"""""""""""""""""""""""
+call dein#end()
