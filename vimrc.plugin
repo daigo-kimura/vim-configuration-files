@@ -7,7 +7,7 @@ call dein#begin(expand('~/.vim/dein'))
 
 call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/neocomplete.vim')
-call dein#add('Sougo/unite-vim')
+call dein#add('Shougo/unite.vim')
 call dein#add('kana/vim-submode')
 call dein#add('davidhalter/jedi-vim')
 
@@ -28,3 +28,10 @@ call dein#add('tmhedberg/matchit')
 call dein#add('xsbeats/vim-blade')
 
 call dein#end()
+
+filetype plugin indent on
+
+" If you want to install not installed plugins on startup.
+if dein#check_install()
+  call dein#install()
+endif
