@@ -38,6 +38,14 @@ NeoBundle 'davidhalter/jedi-vim'
 " テンプレート
 " NeoBundle 'aperezdc/vim-template'
 
+"" ===== markdown 環境構築
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'tyru/open-browser.vim'
+au BufRead, BufNewFile *.md set filetype=markdown
+" :PrevimOpen
+" でmarkdownのプレビュー
+
 call neobundle#end()
 
 filetype plugin indent on
