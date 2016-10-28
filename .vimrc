@@ -3,6 +3,7 @@ source ~/.vim/vimrc/plugin.vim
 source ~/.vim/vimrc/template.vim
 source ~/.vim/vimrc/general.vim
 source ~/.vim/vimrc/filetype.vim
+source ~/.vim/vimrc/neocomplete.vim
 
 "カーソル
 " let &t_SI = "\<Esc>]50;CursorShape=1\x7"
