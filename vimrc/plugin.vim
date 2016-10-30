@@ -10,6 +10,7 @@ call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/unite.vim')
 call dein#add('kana/vim-submode')
 call dein#add('davidhalter/jedi-vim')
+call dein#add('Yggdroot/indentLine')
 
 " call dein#add('mattn/emmet-vim')
 " let g:user_emmet_leader_key='<c-t>'
