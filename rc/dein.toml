@@ -6,7 +6,7 @@ repo = 'Shougo/dein.vim'
 repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
-repo = 'Yggdroot/indentLine'
+repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
 repo = 'scrooloose/syntastic'
