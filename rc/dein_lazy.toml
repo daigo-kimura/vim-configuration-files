@@ -1,0 +1,16 @@
+# [[plugins]]
+# repo = 'davidhalter/jedi-vim'
+# on_ty = ['py']
+
+# ===== markdown 環境構築
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+on_ty = ['md']
+
+[[plugins]]
+repo = 'kannokanno/previm'
+on_ty = ['md']
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+on_ty = ['md']
