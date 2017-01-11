@@ -2,43 +2,41 @@ if &compatible
   set nocompatible
 endif
 set runtimepath+=~/.vim/dein.vim/
+" vimrc に以下のように追記
 
-call dein#begin(expand('~/.vim/dein'))
+" プラグインが実際にインストールされるディレクトリ
+let s:dein_dir = expand('~/.cache/dein')
+" dein.vim 本体
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
-call dein#add('Shougo/dein.vim')
-call dein#add('Shougo/neocomplete.vim')
-call dein#add('Shougo/unite.vim')
-call dein#add('kana/vim-submode')
-call dein#add('davidhalter/jedi-vim')
-call dein#add('Yggdroot/indentLine')
+" dein.vim がなければ github から落としてくる
+if &runtimepath !~# '/dein.vim'
+  if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+  endif
+  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
+endif
 
-" call dein#add('mattn/emmet-vim')
-" let g:user_emmet_leader_key='<c-t>'
-call dein#add('tomtom/tcomment_vim')
+" 設定開始
+if dein#load_state(s:dein_dir)
+  call dein#begin(s:dein_dir)
 
-" "Syntax check
-call dein#add('scrooloose/syntastic')
-call dein#add('scrooloose/nerdtree')
+  " プラグインリストを収めた TOML ファイル
+  " 予め TOML ファイル（後述）を用意しておく
+  let g:rc_dir    = expand('~/.vim/rc')
+  let s:toml      = g:rc_dir . '/dein.toml'
+  let s:lazy_toml = g:rc_dir . '/dein_lazy.toml'
 
-" Solarized ColorScheme
-call dein#add('altercation/vim-colors-solarized')
-"
-" " %キーでhtmlの対応するタグにジャンプ
-call dein#add('tmhedberg/matchit')
-" blade.php用indent
-call dein#add('xsbeats/vim-blade')
+  " TOML を読み込み、キャッシュしておく
+  call dein#load_toml(s:toml,      {'lazy': 0})
+  call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-"" ===== markdown 環境構築
-call dein#add('plasticboy/vim-markdown')
-call dein#add('kannokanno/previm')
-call dein#add('tyru/open-browser.vim')
-" :PrevimOpen
+  " 設定終了
+  call dein#end()
+  call dein#save_state()
+endif
 
-call dein#end()
-
-filetype plugin indent on
-
-" If you want to install not installed plugins on startup.
+" もし、未インストールものものがあったらインストール
 if dein#check_install()
   call dein#install()
 endif

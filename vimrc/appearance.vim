@@ -27,7 +27,7 @@ if has('gui_macvim')
     "背景を明るく
     " set background=dark
     "Setting ColorScheme
-    colorscheme solarized
+    " colorscheme solarized
     " colorscheme elflord
     " colorscheme valloric
     " colorscheme greenblack
