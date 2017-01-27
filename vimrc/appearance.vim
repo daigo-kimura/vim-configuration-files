@@ -35,7 +35,6 @@ if has('gui_macvim')
   colorscheme solarized
   " colorscheme valloric
   " colorscheme greenblack
-  colorscheme molokai
   set t_Co=256
 else
   " colorscheme mine

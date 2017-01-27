@@ -2,7 +2,12 @@
 # repo = 'davidhalter/jedi-vim'
 # on_ty = ['py']
 
-# ===== markdown 環境構築
+# Laravel Blade
+[[plugins]]
+repo = 'jwalton512/vim-blade''
+on_ty = ['php.blade']
+
+# markdown
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
 on_ty = ['md']
