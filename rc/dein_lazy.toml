@@ -5,7 +5,7 @@
 # Laravel Blade
 [[plugins]]
 repo = 'jwalton512/vim-blade''
-on_ty = ['php.blade']
+on_ty = ['blade.php']
 
 # markdown
 [[plugins]]
