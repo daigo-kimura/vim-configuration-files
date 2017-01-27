@@ -2,11 +2,6 @@
 # repo = 'davidhalter/jedi-vim'
 # on_ty = ['py']
 
-# Laravel Blade
-[[plugins]]
-repo = 'jwalton512/vim-blade''
-on_ty = ['blade.php']
-
 # markdown
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
