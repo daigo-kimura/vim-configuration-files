@@ -38,7 +38,7 @@ nnoremap <Space>, :<C-u>source $HOME/.vimrc<CR>
 "SPACE+w
 nnoremap <Space>w :w<CR>
 
-"SPACE+w
+"SPACE+q
 nnoremap <Space>q :q<CR>
 
 """""""""""""""
@@ -63,7 +63,7 @@ noremap sL <C-w>L
 """""""""""""""
 "ウィンドウ関連
 """""""""""""""
-"Ctrl+tでタブ展開
+"stでタブ展開
 noremap st :tabedit<CR>
 
 "()でタブ切り替え
@@ -80,6 +80,8 @@ noremap ) gt
 " call submode#map('bufmove', 'n', '', '+', '<C-w>+')
 " call submode#map('bufmove', 'n', '', '-', '<C-w>-')
 
+" Denite.vim
+noremap <Space>d :Denite<Space>
 
 
 """""""""""""""""""
