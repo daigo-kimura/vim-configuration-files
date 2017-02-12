@@ -1,6 +1,6 @@
-# [[plugins]]
-# repo = 'davidhalter/jedi-vim'
-# on_ty = ['py']
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ty = ['py']
 
 # markdown
 [[plugins]]
