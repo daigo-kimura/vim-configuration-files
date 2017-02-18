@@ -20,6 +20,9 @@ repo = 'Shougo/neoyank.vim'
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
+repo = 'szw/vim-tags'
+
+[[plugins]]
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]
