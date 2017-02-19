@@ -1,7 +1,3 @@
-"""""""""""""""""""
-" KeyMapping
-"""""""""""""""""""
-
 " Leaderを変更
 let mapleader=" "
 
@@ -43,9 +39,16 @@ noremap <Leader>w :w<CR>
 noremap <Leader>q :q<CR>
 
 " Denite.vim
-noremap <Leader>d :Denite<Space>
+if has("nvim")
+  noremap [denite] <Nop>
+  noremap <Leader>d [denite]
+  noremap <silent>c :<C-u>Denite file_rec<CR>
+endif
 
-" Ctrl+hで検索結果ハイライト
+noremap q: <Nop>
+
+
+" 検索結果ハイライト
 noremap <C-@> :<C-u>setlocal hlsearch!<CR>
 
 """""""""""""""
@@ -70,10 +73,10 @@ noremap <C-@> :<C-u>setlocal hlsearch!<CR>
 """""""""""""""
 "ウィンドウ関連
 """""""""""""""
-" stでタブ展開
+" タブ展開
 noremap <Leader>s :tabedit<CR>
 
-" ()でタブ切り替え
+" タブ切り替え
 noremap ( gT
 noremap ) gt
 
@@ -86,8 +89,3 @@ noremap ) gt
 " call submode#map('bufmove', 'n', '', '<', '<C-w><')
 " call submode#map('bufmove', 'n', '', '+', '<C-w>+')
 " call submode#map('bufmove', 'n', '', '-', '<C-w>-')
-
-
-"""""""""""""""""""
-" End KeyMapping
-"""""""""""""""""""
