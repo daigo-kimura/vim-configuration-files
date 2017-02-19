@@ -74,7 +74,7 @@ noremap <C-@> :<C-u>setlocal hlsearch!<CR>
 "ウィンドウ関連
 """""""""""""""
 " タブ展開
-noremap <Leader>s :tabedit<CR>
+noremap <Leader>t :tabedit<CR>
 
 " タブ切り替え
 noremap ( gT
