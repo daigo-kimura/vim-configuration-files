@@ -38,11 +38,17 @@ noremap <Leader>w :w<CR>
 "SPACE+q
 noremap <Leader>q :q<CR>
 
-" Denite.vim
-if has("nvim")
-  noremap [denite] <Nop>
-  noremap <Leader>d [denite]
-  noremap <silent>c :<C-u>Denite file_rec<CR>
+" Unite/Denite
+noremap [unite] <Nop>
+nmap <Leader><Leader> [unite]
+if has('nvim')
+  noremap <silent> [unite]c :<C-u>Denite<Space>file_rec<CR>
+  noremap <silent> [unite]r :<C-u>Denite<Space>file_mru<CR>
+else
+  noremap [unite] <Nop>
+  nmap <Leader>u [unite]
+  noremap <silent> [unite]c :<C-u>Unite<Space>buffer<Space>file_rec<CR>
+  noremap <silent> [unite]r :<C-u>Unite<Space>buffer<Space>file_mru<CR>
 endif
 
 noremap q: <Nop>
