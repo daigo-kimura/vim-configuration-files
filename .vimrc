@@ -3,8 +3,12 @@ source ~/.vim/vimrc/plugin.vim
 source ~/.vim/vimrc/template.vim
 source ~/.vim/vimrc/general.vim
 source ~/.vim/vimrc/filetype.vim
-source ~/.vim/vimrc/neocomplete.vim
-source ~/.vim/vimrc/deoplete.vim
+
+if has('nvim')
+  source ~/.vim/vimrc/deoplete.vim
+else
+  source ~/.vim/vimrc/neocomplete.vim
+endif
 
 "カーソル
 " let &t_SI = "\<Esc>]50;CursorShape=1\x7"

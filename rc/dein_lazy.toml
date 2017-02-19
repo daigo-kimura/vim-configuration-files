@@ -7,14 +7,6 @@ repo = 'Shougo/denite.nvim'
 if = 'has("nvim")'
 
 [[plugins]]
-repo = 'Shougo/neocomplete.vim'
-if = '!has("lua")'
-
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-if = 'has("nvim")'
-
-[[plugins]]
 repo = 'davidhalter/jedi-vim'
 on_ty = ['py']
 
