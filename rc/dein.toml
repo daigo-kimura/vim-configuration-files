@@ -23,7 +23,7 @@ repo = 'scrooloose/nerdtree'
 repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
-repos = 'kana/vim-smartinput'
+repo = 'kana/vim-smartinput'
 
 [[plugins]]
 repo = 'kana/vim-operator-user'
