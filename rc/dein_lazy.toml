@@ -5,20 +5,18 @@ if = '!has("nvim")'
 [[plugins]]
 repo = 'Shougo/denite.nvim'
 if = 'has("nvim")'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+if ='!has("nvim")'
+on_i = 1
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if ='has("nvim")'
+on_i = 1
 
 [[plugins]]
 repo = 'davidhalter/jedi-vim'
 on_ty = ['py']
-
-# markdown
-[[plugins]]
-repo = 'plasticboy/vim-markdown'
-on_ty = ['md']
-
-[[plugins]]
-repo = 'kannokanno/previm'
-on_ty = ['md']
-
-[[plugins]]
-repo = 'tyru/open-browser.vim'
-on_ty = ['md']
