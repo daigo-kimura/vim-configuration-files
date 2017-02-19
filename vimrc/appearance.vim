@@ -19,6 +19,7 @@ set laststatus=2
 " autocmd ColorScheme * highlight Normal ctermbg=none
 " autocmd ColorScheme * highlight LineNr ctermbg=none
 
+set t_Co=256
 if has('gui_macvim') 
   set guifont=Menlo:h12
   "背景を明るく
@@ -28,9 +29,9 @@ if has('gui_macvim')
   colorscheme solarized
   " colorscheme valloric
   " colorscheme greenblack
-  set t_Co=256
 else
   " colorscheme mine
   " colorscheme broduo
   " colorscheme molokai
+  colorscheme lucario
 endif
