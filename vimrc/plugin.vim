@@ -2,7 +2,6 @@ if &compatible
   set nocompatible
 endif
 set runtimepath+=~/.vim/dein.vim/
-" vimrc に以下のように追記
 
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
