@@ -23,39 +23,39 @@ noremap ; :
 " imap <ESC>OC <Right>
 " imap <ESC>OD <Left>
 
-" Ctrl+cでカーソルの強調表示
+" カーソルの強調表示
 noremap <C-c> :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
-"SPACE+.で.vimrc編集
+" vimrc編集
 noremap <Leader>. :<C-u>tabedit $HOME/.vim/<CR>
 
-"SPACE+,で.vimrc更新
+" .vimrc更新
 noremap <Leader>, :<C-u>source $HOME/.vimrc<CR>
 
-"SPACE+w
+"
 noremap <Leader>w :w<CR>
 
-"SPACE+q
+"
 noremap <Leader>q :q<CR>
 
 " Unite/Denite
 noremap [unite] <Nop>
 nmap <Leader><Leader> [unite]
 if has('nvim')
-  noremap <silent> [unite]c :<C-u>Denite<Space>file_rec<CR>
-  noremap <silent> [unite]r :<C-u>Denite<Space>file_mru<CR>
+  noremap <silent> [unite]c :<C-u>DeniteProjectDir<Space>file_rec<CR>
+  noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
+  noremap <silent> [unite]u :<C-u>DeniteProjectDir<Space>-resume<CR>
+  noremap <silent> [unite]y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 else
-  noremap [unite] <Nop>
-  nmap <Leader>u [unite]
   noremap <silent> [unite]c :<C-u>Unite<Space>buffer<Space>file_rec<CR>
   noremap <silent> [unite]r :<C-u>Unite<Space>buffer<Space>file_mru<CR>
+  noremap <silent> [unite]y :<C-u>Unite<Space>neoyank<CR>
 endif
 
 noremap q: <Nop>
 
-
 " 検索結果ハイライト
-noremap <C-@> :<C-u>setlocal hlsearch!<CR>
+noremap <C-^> :<C-u>setlocal hlsearch!<CR>
 
 """""""""""""""
 "ウィンドウ関連
