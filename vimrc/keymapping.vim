@@ -42,14 +42,13 @@ noremap <Leader>q :q<CR>
 noremap [unite] <Nop>
 nmap <Leader><Leader> [unite]
 if has('nvim')
-  noremap <silent> [unite]c :<C-u>DeniteProjectDir<Space>file_rec<CR>
+  noremap <silent> [unite]<Leader> :<C-u>DeniteProjectDir<Space>file_rec<CR>
   noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
   noremap <silent> [unite]u :<C-u>DeniteProjectDir<Space>-resume<CR>
   noremap <silent> [unite]y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 else
-  noremap <silent> [unite]c :<C-u>Unite<Space>buffer<Space>file_rec<CR>
-  noremap <silent> [unite]r :<C-u>Unite<Space>buffer<Space>file_mru<CR>
-  noremap <silent> [unite]y :<C-u>Unite<Space>neoyank<CR>
+  noremap <silent> [unite]<Leader> :<C-u>Unite<Space>buffer<Space>file_mru<CR>
+  noremap <silent> [unite]r :<C-u>Unite<Space>buffer<Space>file_rec<CR>
 endif
 
 noremap q: <Nop>
