@@ -45,5 +45,9 @@ set noswapfile
 "ビーブ音オフ
 set visualbell t_vb=
 
+" 保存時に行末のスペースを削除
+" Markdownの改行のためのスペースは無視
+autocmd BufWritePre * :%s/\s$//ge
+
 " Rubyが重いときこれやったら軽くなった
 set re=1
