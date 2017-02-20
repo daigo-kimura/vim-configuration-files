@@ -1,5 +1,5 @@
 " Leaderを変更
-let mapleader=" "
+let g:mapleader=' '
 
 "ノーマルモード時Enterで改行
 "noremap <CR> o<esc>
