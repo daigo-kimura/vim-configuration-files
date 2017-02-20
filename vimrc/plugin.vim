@@ -2,6 +2,8 @@ if &compatible
   set nocompatible
 endif
 
+set runtimepath+=~/.vim/dein.vim/
+
 " プラグインが実際にインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
@@ -30,3 +32,6 @@ endif
 if dein#check_install()
   call dein#install()
 endif
+
+" Tag jump for Ruby
+au BufNewFile,BufRead *.rubylet g:vim_tags_project_tags_command = "ctags --languages=php -f ~/php.tags `pwd` 2>/dev/null &"
