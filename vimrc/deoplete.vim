@@ -9,5 +9,5 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" Close popup by <Space>.
-inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+" Close popup by <CR>.
+inoremap <expr><CR> pumvisible() ? "\<C-y>" : "\<CR>"

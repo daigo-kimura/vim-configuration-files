@@ -39,7 +39,7 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 " inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " Close popup by <Space>.
-inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+inoremap <expr><CR> pumvisible() ? "\<C-y>" : "\<CR>"
 
 " AutoComplPop like behavior.
 "let g:neocomplete#enable_auto_select = 1
