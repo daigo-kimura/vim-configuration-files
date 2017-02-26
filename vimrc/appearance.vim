@@ -22,9 +22,6 @@ set laststatus=2
 set t_Co=256
 if has('gui_macvim')
   set guifont=Menlo:h12
-  "背景を明るく
-  " set background=dark
-  "Setting ColorScheme
   " colorscheme elflord
   colorscheme solarized
   " colorscheme valloric
@@ -33,7 +30,8 @@ else
   " colorscheme mine
   " colorscheme broduo
   " colorscheme molokai
-  set background=dark
-  colorscheme solarized
   " colorscheme lucario
+  set background=dark
+  let g:solarized_termtrans=1
+  colorscheme solarized
 endif
