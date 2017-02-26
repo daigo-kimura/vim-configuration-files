@@ -2,7 +2,7 @@
 " Language:     Blade (Laravel)
 " Maintainer:   Jason Walton <jwalton512@gmail.com>
 " Filenames:    *.blade.php
-echo 'blade syntax'
+
 if exists('b:current_syntax')
     finish
 endif
