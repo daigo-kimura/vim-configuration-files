@@ -1,11 +1,11 @@
 " 行番号を付ける
-set number 
+set number
 
 " 文字に色をつける
-syntax enable 
+syntax enable
 
 " 常にステータスラインを表示
-set laststatus=2 
+set laststatus=2
 
 " status line
 " set statusline=%F%m%r%h%w
@@ -20,7 +20,7 @@ set laststatus=2
 " autocmd ColorScheme * highlight LineNr ctermbg=none
 
 set t_Co=256
-if has('gui_macvim') 
+if has('gui_macvim')
   set guifont=Menlo:h12
   "背景を明るく
   " set background=dark
@@ -33,5 +33,7 @@ else
   " colorscheme mine
   " colorscheme broduo
   " colorscheme molokai
-  colorscheme lucario
+  set background=dark
+  colorscheme solarized
+  " colorscheme lucario
 endif
