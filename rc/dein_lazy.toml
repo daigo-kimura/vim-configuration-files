@@ -20,7 +20,3 @@ on_i = 1
 [[plugins]]
 repo = 'davidhalter/jedi-vim'
 on_ty = ['py']
-
-[[plugin]]
-repo = 'jwalton512/vim-blade'
-on_ty = ['blade']
