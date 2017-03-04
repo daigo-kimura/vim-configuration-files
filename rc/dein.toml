@@ -32,4 +32,7 @@ repo = 'kana/vim-operator-user'
 repo = 'kana/vim-textobj-user'
 
 [[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
 repo = 'Lokaltog/vim-powerline'
