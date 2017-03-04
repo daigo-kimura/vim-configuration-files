@@ -27,19 +27,19 @@ noremap ; :
 vnoremap <C-p> I<C-r>"<ESC><ESC>
 
 " カーソルの強調表示
-noremap <C-c> :<C-u>setlocal cursorline! cursorcolumn!<CR>
+noremap <silent> <C-c> :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
 " vimrc編集
-noremap <Leader>. :<C-u>tabedit $HOME/.vim/<CR>
+noremap <silent> <Leader>. :<C-u>tabedit $HOME/.vim/<CR>
 
 " .vimrc更新
-noremap <Leader>, :<C-u>source $HOME/.vimrc<CR>
+noremap <silent> <Leader>, :<C-u>source $HOME/.vimrc<CR>
 
 "
-noremap <Leader>w :w<CR>
+noremap <silent> <Leader>w :w<CR>
 
 "
-noremap <Leader>q :q<CR>
+noremap <silent> <Leader>q :q<CR>
 
 " Unite/Denite
 noremap [unite] <Nop>
@@ -49,6 +49,9 @@ if has('nvim')
   noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
   noremap <silent> [unite]u :<C-u>DeniteProjectDir<Space>-resume<CR>
   noremap <silent> [unite]y :<C-u>DeniteProjectDir<Space>neoyank<CR>
+
+  call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>')
+  call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>')
 else
   noremap <silent> [unite]<Leader> :<C-u>Unite<Space>buffer<Space>file_mru<CR>
   noremap <silent> [unite]r :<C-u>Unite<Space>buffer<Space>file_rec<CR>
@@ -57,7 +60,7 @@ endif
 noremap q: <Nop>
 
 " 検索結果ハイライト
-noremap <C-^> :<C-u>setlocal hlsearch!<CR>
+noremap <silent> <C-^> :<C-u>setlocal hlsearch!<CR>
 
 """""""""""""""
 "ウィンドウ関連

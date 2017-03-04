@@ -2,6 +2,22 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'Shougo/unite.vim'
+if = '!has("nvim")'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+if = 'has("nvim")'
+
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+if ='!has("nvim")'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+if ='has("nvim")'
+
+[[plugins]]
 repo = 'Shougo/neoyank.vim'
 
 [[plugins]]
@@ -36,3 +52,7 @@ repo = 'tpope/vim-surround'
 
 [[plugins]]
 repo = 'Lokaltog/vim-powerline'
+
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ty = ['py']
