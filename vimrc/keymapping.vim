@@ -40,7 +40,7 @@ noremap <Leader>q :q<CR>
 
 " Unite/Denite
 noremap [unite] <Nop>
-nmap <Leader><Leader> [unite]
+nmap <Leader> [unite]
 if has('nvim')
   noremap <silent> [unite]<Leader> :<C-u>DeniteProjectDir<Space>file_rec<CR>
   noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
