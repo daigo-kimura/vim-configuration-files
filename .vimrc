@@ -19,3 +19,4 @@ source ~/.vim/vimrc/keymapping.vim
 source ~/.vim/vimrc/appearance.vim
 source ~/.vim/vimrc/vim-smartinput.vim
 source ~/.vim/vimrc/vim-powerline.vim
+source ~/.vim/vimrc/nerdtree.vim

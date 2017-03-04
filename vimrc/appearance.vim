@@ -7,6 +7,8 @@ syntax enable
 " 常にステータスラインを表示
 set laststatus=2
 
+" Visualize tab, space
+set listchars=tab:>-,trail:-,nbsp:-,extends:>,precedes:<,
 " status line
 " set statusline=%F%m%r%h%w
 

@@ -23,6 +23,9 @@ noremap ; :
 " imap <ESC>OC <Right>
 " imap <ESC>OD <Left>
 
+" Virtical paste
+vnoremap <C-p> I<C-r>"<ESC><ESC>
+
 " カーソルの強調表示
 noremap <C-c> :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
