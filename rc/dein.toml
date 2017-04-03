@@ -39,9 +39,6 @@ repo = 'scrooloose/nerdtree'
 repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
-repo = 'kana/vim-smartinput'
-
-[[plugins]]
 repo = 'kana/vim-operator-user'
 
 [[plugins]]
