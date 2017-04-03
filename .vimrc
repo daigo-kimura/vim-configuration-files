@@ -1,4 +1,3 @@
-set runtimepath+=~/.vim/bundle/neobundle.vim/
 source ~/.vim/vimrc/plugin.vim
 source ~/.vim/vimrc/template.vim
 source ~/.vim/vimrc/general.vim
@@ -17,6 +16,7 @@ endif
 source ~/.vim/vimrc/indent.vim
 source ~/.vim/vimrc/keymapping.vim
 source ~/.vim/vimrc/appearance.vim
-source ~/.vim/vimrc/vim-smartinput.vim
-source ~/.vim/vimrc/vim-powerline.vim
+source ~/.vim/vimrc/smartinput.vim
+source ~/.vim/vimrc/lightline.vim
 source ~/.vim/vimrc/nerdtree.vim
+source ~/.vim/vimrc/ale.vim

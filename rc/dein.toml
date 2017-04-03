@@ -30,7 +30,7 @@ repo = 'szw/vim-tags'
 repo = 'Yggdroot/indentLine'
 
 [[plugins]]
-repo = 'scrooloose/syntastic'
+repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -39,16 +39,10 @@ repo = 'scrooloose/nerdtree'
 repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
-repo = 'kana/vim-operator-user'
-
-[[plugins]]
-repo = 'kana/vim-textobj-user'
-
-[[plugins]]
 repo = 'tpope/vim-surround'
 
 [[plugins]]
-repo = 'Lokaltog/vim-powerline'
+repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'davidhalter/jedi-vim'
