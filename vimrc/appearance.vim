@@ -31,9 +31,9 @@ if has('gui_macvim')
 else
   " colorscheme mine
   " colorscheme broduo
-  " colorscheme molokai
+  colorscheme molokai
   " colorscheme lucario
-  set background=dark
-  let g:solarized_termtrans=1
-  colorscheme solarized
+  " set background=dark
+  " let g:solarized_termtrans=1
+  " colorscheme solarized
 endif
