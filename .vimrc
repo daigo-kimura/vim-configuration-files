@@ -9,10 +9,6 @@ else
   source ~/.vim/vimrc/neocomplete.vim
 endif
 
-"カーソル
-
-" https://sites.google.com/site/fudist/Home/vim-nihongo-ban/-vimrc-sample
-
 source ~/.vim/vimrc/indent.vim
 source ~/.vim/vimrc/keymapping.vim
 source ~/.vim/vimrc/appearance.vim
