@@ -36,9 +36,6 @@ repo = 'w0rp/ale'
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]
-repo = 'tomtom/tcomment_vim'
-
-[[plugins]]
 repo = 'tpope/vim-surround'
 
 [[plugins]]
@@ -46,6 +43,9 @@ repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'Vimjas/vim-python-pep8-indent'
+
+[[plugins]]
+repo = 'tyru/caw.vim'
 
 [[plugins]]
 repo = 'daigo-kimura/annotation-vim'
