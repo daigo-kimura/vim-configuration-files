@@ -3,8 +3,8 @@ augroup filetypedetect
     au BufRead,BufNewFile *.rb setfiletype ruby
     au BufRead,BufNewFile *.php setfiletype php
     au BufRead,BufNewFile *.swift setfiletype swift
-    au BufRead,BufNewFile *.blade.php setfiletype php
-    au BufRead,BufNewFile *.md set filetype=markdown
-    au BufRead,BufNewFile *.swi set filetype=prolog
-    au BufRead,BufNewFile *.blade.php set filetype=blade
+    au BufRead,BufNewFile *.md setfiletype markdown
+    au BufRead,BufNewFile *.swi setfiletype prolog
+    au BufRead,BufNewFile *.blade.php setfiletype blade
+    au BufRead,BufNewFile *.aiml setfiletype xml
 augroup END

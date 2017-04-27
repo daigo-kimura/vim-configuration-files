@@ -16,3 +16,4 @@ source ~/.vim/vimrc/smartinput.vim
 source ~/.vim/vimrc/lightline.vim
 source ~/.vim/vimrc/nerdtree.vim
 source ~/.vim/vimrc/ale.vim
+source ~/.vim/vimrc/caw.vim
