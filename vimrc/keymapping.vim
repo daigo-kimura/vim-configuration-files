@@ -36,10 +36,10 @@ noremap <silent> <Leader>. :<C-u>tabedit $HOME/.vim/<CR>
 noremap <silent> <Leader>, :<C-u>source $HOME/.vimrc<CR>
 
 "
-noremap <silent> <Leader>w :w<CR>
+noremap <silent> <Leader>w :<C-u>w<CR>
 
 "
-noremap <silent> <Leader>q :q<CR>
+noremap <silent> <Leader>q :<C-u>q<CR>
 
 " Unite/Denite
 noremap [unite] <Nop>
@@ -85,7 +85,7 @@ noremap <silent> <C-^> :<C-u>setlocal hlsearch!<CR>
 "ウィンドウ関連
 """""""""""""""
 " タブ展開
-noremap <Leader>t :tabedit<CR>
+noremap <Leader>t :<C-u>tabedit<CR>
 
 " タブ切り替え
 noremap ( gT
