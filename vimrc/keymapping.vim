@@ -44,18 +44,13 @@ noremap <silent> <Leader>q :<C-u>q<CR>
 " Unite/Denite
 noremap [unite] <Nop>
 nmap <Leader> [unite]
-if has('nvim')
-  noremap <silent> [unite]<Leader> :<C-u>DeniteProjectDir<Space>file_rec<CR>
-  noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
-  noremap <silent> [unite]u :<C-u>DeniteProjectDir<Space>-resume<CR>
-  noremap <silent> [unite]y :<C-u>DeniteProjectDir<Space>neoyank<CR>
+noremap <silent> [unite]<Leader> :<C-u>DeniteProjectDir<Space>file_rec<CR>
+noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
+noremap <silent> [unite]u :<C-u>DeniteProjectDir<Space>-resume<CR>
+noremap <silent> [unite]y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 
-  call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>')
-  call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>')
-else
-  noremap <silent> [unite]<Leader> :<C-u>Unite<Space>buffer<Space>file_mru<CR>
-  noremap <silent> [unite]r :<C-u>Unite<Space>buffer<Space>file_rec<CR>
-endif
+call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>')
+call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>')
 
 noremap q: <Nop>
 
