@@ -38,4 +38,7 @@ repo = 'Vimjas/vim-python-pep8-indent'
 repo = 'tyru/caw.vim'
 
 [[plugins]]
+repo = 'sjl/badwolf'
+
+[[plugins]]
 repo = 'daigo-kimura/annotation-vim'

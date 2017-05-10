@@ -25,17 +25,18 @@ set t_Co=256
 if has('gui_macvim')
   set guifont=Menlo:h12
   " colorscheme elflord
+  " set background=light
   colorscheme solarized
   " colorscheme valloric
   " colorscheme greenblack
+  " colorscheme SerialExperimentsLain
 else
   " colorscheme mine
   " colorscheme broduo
   " colorscheme molokai
-  colorscheme SerialExperimentsLain
+  " colorscheme SerialExperimentsLain
   " colorscheme newproggie
   " colorscheme lucario
-  " set background=dark
-  " let g:solarized_termtrans=1
-  " colorscheme solarized
+  set background=dark
+  colorscheme badwolf
 endif
