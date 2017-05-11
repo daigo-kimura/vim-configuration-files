@@ -9,9 +9,9 @@ set mouse=a
 
 "出力ファイルの文字コード
 set fileencodings=utf-8,shift_jis,euc-jp,iso-2022-jp,cp932
- 
+
 "Backspaceで文字削除、行連結、インデント削除
-set backspace=start,eol,indent 
+set backspace=start,eol,indent
 
 "左右のカーソルで行間移動
 set whichwrap=b,s,<,>,[,]
@@ -24,7 +24,7 @@ set incsearch
 set nohlsearch
 
 "コマンドラインでの入力補完
-set wildmenu wildmode=list:full 
+set wildmenu wildmode=list:full
 
 "モード表示
 set showmode
@@ -47,7 +47,9 @@ set visualbell t_vb=
 
 " 保存時に行末のスペースを削除
 " Markdownの改行のためのスペースは無視
-autocmd BufWritePre * :%s/\s$//ge
+if &filetype !~ '(xml|markdown)'
+  autocmd BufWritePre * :%s/\s\+$//ge
+endif
 
 " Rubyが重いときこれやったら軽くなった
 set re=1
