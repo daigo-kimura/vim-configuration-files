@@ -21,15 +21,9 @@ set listchars=tab:>-,trail:-,nbsp:-,extends:>,precedes:<,
 " autocmd ColorScheme * highlight Normal ctermbg=none
 " autocmd ColorScheme * highlight LineNr ctermbg=none
 
-set t_Co=256
+" set t_Co=256
 if has('gui_macvim')
-  set guifont=Menlo:h12
-  " colorscheme elflord
-  " set background=light
-  colorscheme solarized
-  " colorscheme valloric
-  " colorscheme greenblack
-  " colorscheme SerialExperimentsLain
+  " 設定は$HOME/_gvimrcに記入すること
 else
   " colorscheme mine
   " colorscheme broduo
@@ -37,6 +31,6 @@ else
   " colorscheme SerialExperimentsLain
   " colorscheme newproggie
   " colorscheme lucario
-  set background=dark
+  " set background=dark
   colorscheme badwolf
 endif
