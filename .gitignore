@@ -2,4 +2,6 @@
 .netrwhist
 bundle/*
 dein.vim
-dein/*
+.undo/*
+.backup/*
+vimrc/ignore.vim

@@ -1,19 +1,23 @@
-source ~/.vim/vimrc/plugin.vim
-source ~/.vim/vimrc/template.vim
-source ~/.vim/vimrc/general.vim
-source ~/.vim/vimrc/filetype.vim
+source $HOME/.vim/vimrc/plugin.vim
+source $HOME/.vim/vimrc/template.vim
+source $HOME/.vim/vimrc/general.vim
+source $HOME/.vim/vimrc/filetype.vim
 
 if has('nvim')
-  source ~/.vim/vimrc/deoplete.vim
+  source $HOME/.vim/vimrc/deoplete.vim
 else
-  source ~/.vim/vimrc/neocomplete.vim
+  source $HOME/.vim/vimrc/neocomplete.vim
 endif
 
-source ~/.vim/vimrc/indent.vim
-source ~/.vim/vimrc/keymapping.vim
-source ~/.vim/vimrc/appearance.vim
-source ~/.vim/vimrc/smartinput.vim
-source ~/.vim/vimrc/lightline.vim
-source ~/.vim/vimrc/nerdtree.vim
-source ~/.vim/vimrc/ale.vim
-source ~/.vim/vimrc/caw.vim
+source $HOME/.vim/vimrc/indent.vim
+source $HOME/.vim/vimrc/keymapping.vim
+source $HOME/.vim/vimrc/appearance.vim
+source $HOME/.vim/vimrc/smartinput.vim
+source $HOME/.vim/vimrc/lightline.vim
+source $HOME/.vim/vimrc/nerdtree.vim
+source $HOME/.vim/vimrc/ale.vim
+source $HOME/.vim/vimrc/caw.vim
+
+if filereadable(expand('$HOME/.vim/vimrc/ignore.vim'))
+  source $HOME/.vim/vimrc/ignore.vim
+endif
