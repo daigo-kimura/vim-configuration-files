@@ -1,1 +1,3 @@
-
+[[plugin]]
+repo = 'vim-syntastic/syntastic'
+on_ft = ['xml']
