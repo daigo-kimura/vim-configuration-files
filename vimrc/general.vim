@@ -42,14 +42,30 @@ hi MatchParen ctermbg=1
 "スワップファイル
 set noswapfile
 
+" Undo file (aaa.un~)
+set undofile
+
+" where backup files are saved
+set undodir=$HOME/.vim/.undo
+
+" Backup file (aaa.bbb~)
+set backup
+
+" Where backup files are saved
+set backupdir=$HOME/.vim/.backup
+
 "ビーブ音オフ
 set visualbell t_vb=
 
 " 保存時に行末のスペースを削除
 " Markdownの改行のためのスペースは無視
-if &filetype !~ '(xml|markdown)'
-  autocmd BufWritePre * :%s/\s\+$//ge
-endif
+autocmd BufWritePre * call TrimBlankEndOfSentence()
+
+function! TrimBlankEndOfSentence()
+  if &filetype !~ '\(xml\|markdown\)'
+    execute('%s/\s\+$//ge')
+  endif
+endfunction
 
 " Rubyが重いときこれやったら軽くなった
 set re=1
