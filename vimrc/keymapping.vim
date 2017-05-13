@@ -30,7 +30,8 @@ vnoremap <C-p> I<C-r>"<ESC><ESC>
 noremap <silent> <C-c> :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
 " vimrc編集
-noremap <silent> <Leader>. :<C-u>tabedit $HOME/.vim/<CR>
+" call arpeggio#map('nx', '', '<Leader>.', 0, ':<C-u>tabedit $HOME/.vim/<CR>')
+
 
 " .vimrc更新
 noremap <silent> <Leader>, :<C-u>source $HOME/.vimrc<CR>
@@ -44,7 +45,7 @@ noremap <silent> <Leader>q :<C-u>q<CR>
 " Unite/Denite
 noremap [unite] <Nop>
 nmap <Leader> [unite]
-noremap <silent> [unite]<Leader> :<C-u>DeniteProjectDir<Space>file_rec<CR>
+noremap <silent> [unite]d :<C-u>DeniteProjectDir<Space>file_rec<CR>
 noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
 noremap <silent> [unite]u :<C-u>DeniteProjectDir<Space>-resume<CR>
 noremap <silent> [unite]y :<C-u>DeniteProjectDir<Space>neoyank<CR>
@@ -57,9 +58,6 @@ noremap q: <Nop>
 " 検索結果ハイライト
 noremap <silent> <C-^> :<C-u>setlocal hlsearch!<CR>
 
-"""""""""""""""
-"ウィンドウ関連
-"""""""""""""""
 " ss, sv水平、垂直画面分割
 " noremap ss :split<CR>
 " noremap sv :vsplit<CR>
@@ -76,9 +74,6 @@ noremap <silent> <C-^> :<C-u>setlocal hlsearch!<CR>
 " noremap sK <C-w>K
 " noremap sL <C-w>L
 
-"""""""""""""""
-"ウィンドウ関連
-"""""""""""""""
 " タブ展開
 noremap <Leader>t :<C-u>tabedit<CR>
 

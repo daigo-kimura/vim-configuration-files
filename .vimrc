@@ -1,4 +1,4 @@
-source $HOME/.vim/vimrc/plugin.vim
+source $HOME/.vim/vimrc/dein.vim
 source $HOME/.vim/vimrc/template.vim
 source $HOME/.vim/vimrc/general.vim
 source $HOME/.vim/vimrc/filetype.vim

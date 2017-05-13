@@ -41,4 +41,7 @@ repo = 'tyru/caw.vim'
 repo = 'sjl/badwolf'
 
 [[plugins]]
+repo = 'kana/vim-submode'
+
+[[plugins]]
 repo = 'daigo-kimura/annotation-vim'
