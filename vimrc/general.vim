@@ -20,8 +20,8 @@ set whichwrap=b,s,<,>,[,]
 set incsearch
 
 "ハイライト
-" set hlsearch
-set nohlsearch
+set hlsearch
+" set nohlsearch
 
 "コマンドラインでの入力補完
 set wildmenu wildmode=list:full
@@ -31,9 +31,9 @@ set showmode
 
 "方向キー使用
 set nocompatible
-" set notimeout
-" set ttimeout
-set timeout timeoutlen=400 ttimeoutlen=75
+set notimeout
+set nottimeout
+" set timeout timeoutlen=400 ttimeoutlen=75
 
 " 括弧の強調表示解除
 " let g:loaded_matchparen=1

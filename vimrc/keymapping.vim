@@ -30,7 +30,7 @@ vnoremap <C-p> I<C-r>"<ESC><ESC>
 noremap <silent> <C-c> :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
 " vimrc編集
-" call arpeggio#map('nx', '', '<Leader>.', 0, ':<C-u>tabedit $HOME/.vim/<CR>')
+noremap <silent> <Leader>. :<C-u>tabedit $HOME/.vimrc<CR>
 
 
 " .vimrc更新
@@ -43,12 +43,10 @@ noremap <silent> <Leader>w :<C-u>w<CR>
 noremap <silent> <Leader>q :<C-u>q<CR>
 
 " Unite/Denite
-noremap [unite] <Nop>
-nmap <Leader> [unite]
-noremap <silent> [unite]d :<C-u>DeniteProjectDir<Space>file_rec<CR>
-noremap <silent> [unite]r :<C-u>DeniteProjectDir<Space>file_mru<CR>
-noremap <silent> [unite]u :<C-u>DeniteProjectDir<Space>-resume<CR>
-noremap <silent> [unite]y :<C-u>DeniteProjectDir<Space>neoyank<CR>
+noremap <silent> <Leader>d :<C-u>DeniteProjectDir<Space>file_rec<CR>
+noremap <silent> <Leader>r :<C-u>DeniteProjectDir<Space>file_mru<CR>
+noremap <silent> <Leader>u :<C-u>DeniteProjectDir<Space>-resume<CR>
+noremap <silent> <Leader>y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 
 call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>')
 call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>')
@@ -82,11 +80,11 @@ noremap ( gT
 noremap ) gt
 
 "ウィンドウサイズのマッピングはプラグイン
-" call submode#enter_with('bufmove', 'n', '', 's>', '<C-w>>')
-" call submode#enter_with('bufmove', 'n', '', 's<', '<C-w><')
-" call submode#enter_with('bufmove', 'n', '', 's+', '<C-w>+')
-" call submode#enter_with('bufmove', 'n', '', 's-', '<C-w>-')
-" call submode#map('bufmove', 'n', '', '>', '<C-w>>')
-" call submode#map('bufmove', 'n', '', '<', '<C-w><')
-" call submode#map('bufmove', 'n', '', '+', '<C-w>+')
-" call submode#map('bufmove', 'n', '', '-', '<C-w>-')
+call submode#enter_with('bufmove', 'n', '', '<C-w>>', '<C-w>>')
+call submode#enter_with('bufmove', 'n', '', '<C-w><', '<C-w><')
+call submode#enter_with('bufmove', 'n', '', '<C-w>+', '<C-w>+')
+call submode#enter_with('bufmove', 'n', '', '<C-w>-', '<C-w>-')
+call submode#map('bufmove', 'n', '', '>', '<C-w>>')
+call submode#map('bufmove', 'n', '', '<', '<C-w><')
+call submode#map('bufmove', 'n', '', '+', '<C-w>+')
+call submode#map('bufmove', 'n', '', '-', '<C-w>-')
