@@ -1,7 +1,6 @@
 .DS_Store
 .netrwhist
 bundle/*
-dein.vim
 .undo/*
 .backup/*
 vimrc/ignore.vim
