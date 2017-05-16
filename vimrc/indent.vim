@@ -1,16 +1,11 @@
-
-"""""""""""""""""""
-"インデント関連
-"""""""""""""""""""
 "自動インデント
 set smartindent
 
 " filetypeのpluginによるindentをon
 filetype plugin indent on
 
-"タブをスペースに置き換え
-set expandtab 
-" set noexpandtab 
+"タブをスペースに置き換えない
+set expandtab
 
 "tab=スペースn文字
 set tabstop=2
