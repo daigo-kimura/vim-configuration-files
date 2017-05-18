@@ -70,13 +70,12 @@ function! TrimBlankEndOfSentence()
   endif
 endfunction
 
-" Typewriter scroll
-set scrolloff=9999
 
 " 日本語(マルチバイト文字)行の連結時には空白を入力しない。
 set formatoptions+=mMj
 
 " □や○の文字があってもカーソル位置がずれないようにする。
+" これをやると，lightlineの♪マークの表示がおかしくなる
 " set ambiwidth=double
 
 " Display last line
