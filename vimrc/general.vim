@@ -70,6 +70,7 @@ function! TrimBlankEndOfSentence()
   endif
 endfunction
 
+set foldmethod=indent
 
 " 日本語(マルチバイト文字)行の連結時には空白を入力しない。
 set formatoptions+=mMj
