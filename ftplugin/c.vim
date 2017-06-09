@@ -12,4 +12,8 @@ let b:did_indent = 1
 " C indenting is built-in, thus this is very simple
 setlocal cindent
 
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+
 let b:undo_indent = "setl cin<"
