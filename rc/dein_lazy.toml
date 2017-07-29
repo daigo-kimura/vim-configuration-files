@@ -1,3 +1,7 @@
 [[plugin]]
-repo = 'vim-syntastic/syntastic'
-on_ft = ['xml']
+repo = 'lervag/vimtex'
+on_ft = ['tex']
+
+[[plugin]]
+repo = 'thinca/vim-quickrun'
+on_ft = ['tex']
