@@ -1,48 +1,48 @@
 scriptencoding utf-8
 set encoding=utf-8
 
-" Macとクリップボードを連携
+" Use clipboard
 set clipboard=unnamed
 
 " Mouse
 set mouse=a
 
-"出力ファイルの文字コード
+" Output encoding
 set fileencodings=utf-8,shift_jis,euc-jp,iso-2022-jp,cp932
 
-"Backspaceで文字削除、行連結、インデント削除
+" Delete char/indent or concat lines with backspace
 set backspace=start,eol,indent
 
-"左右のカーソルで行間移動
+" Move cursor to prev/next line with left/right key
 set whichwrap=b,s,<,>,[,]
 
-"インクリメンタル検索
+" Incremental search
 set incsearch
 
-"ハイライト
+" Hilight search
 set hlsearch
 " set nohlsearch
 
-"コマンドラインでの入力補完
+" Completion in commant line
 set wildmenu wildmode=list:full
 
-"モード表示
+" Show mode
 set showmode
 
 " Shift break symbol
 " set showbreak=
 
-"方向キー使用
+" Use allow keys
 set nocompatible
 set notimeout
 set nottimeout
 " set timeout timeoutlen=400 ttimeoutlen=75
 
-" 括弧の強調表示解除
+" Parentheses highlight
 " let g:loaded_matchparen=1
 hi MatchParen ctermbg=1
 
-"スワップファイル
+" Swap
 set noswapfile
 
 " Undo file (aaa.un~)
@@ -57,11 +57,11 @@ set backup
 " Where backup files are saved
 set backupdir=$HOME/.vim/.backup
 
-"ビーブ音オフ
+" Off beap
 set visualbell t_vb=
 
-" 保存時に行末のスペースを削除
-" Markdownの改行のためのスペースは無視
+" Remove white space in the end of every line
+" if not Markdown or Xml
 autocmd BufWritePre * call TrimBlankEndOfSentence()
 
 function! TrimBlankEndOfSentence()
@@ -72,15 +72,11 @@ endfunction
 
 set foldmethod=indent
 
-" 日本語(マルチバイト文字)行の連結時には空白を入力しない。
+" Not insert space when a concat line that contain Multi-Byte chars
 set formatoptions+=mMj
-
-" □や○の文字があってもカーソル位置がずれないようにする。
-" これをやると，lightlineの♪マークの表示がおかしくなる
-" set ambiwidth=double
 
 " Display last line
 set display+=lastline
 
-" Rubyが重いときこれやったら軽くなった
+" Make ruby light
 set re=1
