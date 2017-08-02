@@ -7,7 +7,8 @@ endif
 " Automatically closing scratch window on leaving insert
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" Close popup by <CR>.
-inoremap <expr><CR> pumvisible() ? "\<C-y>" : "\<CR>"
+" <TAB>: completion
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Close popup and insert new line by <CR>
+inoremap <expr><CR> pumvisible() ? "\<C-y><CR>" : "\<CR>"
