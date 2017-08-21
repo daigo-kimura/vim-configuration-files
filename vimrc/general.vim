@@ -78,5 +78,8 @@ set formatoptions+=mMj
 " Display last line
 set display+=lastline
 
+" Disable tex conceal
+let g:tex_conceal=''
+
 " Make ruby light
 set re=1
