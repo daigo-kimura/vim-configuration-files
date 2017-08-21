@@ -48,13 +48,19 @@ set noswapfile
 " Undo file (aaa.un~)
 set undofile
 
-" where backup files are saved
+" Where undo files are saved
+if !isdirectory($HOME . "/.vim/.undo")
+  call mkdir($HOME . "/.vim/.undo")
+endif
 set undodir=$HOME/.vim/.undo
 
 " Backup file (aaa.bbb~)
 set backup
 
 " Where backup files are saved
+if !isdirectory($HOME . "/.vim/.backup")
+  call mkdir($HOME . "/.vim/.backup")
+endif
 set backupdir=$HOME/.vim/.backup
 
 " Off beap
