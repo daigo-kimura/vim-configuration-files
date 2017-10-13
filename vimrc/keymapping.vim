@@ -48,9 +48,6 @@ noremap <silent> <Leader>r :<C-u>DeniteProjectDir<Space>file_mru<CR>
 noremap <silent> <Leader>u :<C-u>DeniteProjectDir<Space>-resume<CR>
 noremap <silent> <Leader>y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 
-call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>')
-call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>')
-
 noremap q: <Nop>
 
 " 検索結果ハイライト
@@ -78,13 +75,3 @@ noremap <Leader>t :<C-u>tabedit<CR>
 " タブ切り替え
 noremap ( gT
 noremap ) gt
-
-"ウィンドウサイズのマッピングはプラグイン
-call submode#enter_with('bufmove', 'n', '', '<C-w>>', '<C-w>>')
-call submode#enter_with('bufmove', 'n', '', '<C-w><', '<C-w><')
-call submode#enter_with('bufmove', 'n', '', '<C-w>+', '<C-w>+')
-call submode#enter_with('bufmove', 'n', '', '<C-w>-', '<C-w>-')
-call submode#map('bufmove', 'n', '', '>', '<C-w>>')
-call submode#map('bufmove', 'n', '', '<', '<C-w><')
-call submode#map('bufmove', 'n', '', '+', '<C-w>+')
-call submode#map('bufmove', 'n', '', '-', '<C-w>-')
