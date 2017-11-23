@@ -1,10 +1,10 @@
+source $HOME/.vim/vimrc/filetype.vim
 source $HOME/.vim/vimrc/dein.vim
 source $HOME/.vim/vimrc/template.vim
 source $HOME/.vim/vimrc/general.vim
 source $HOME/.vim/vimrc/indent.vim
 source $HOME/.vim/vimrc/keymapping.vim
 source $HOME/.vim/vimrc/appearance.vim
-source $HOME/.vim/vimrc/filetype.vim
 
 if has('nvim')
   source $HOME/.vim/vimrc/deoplete.vim
