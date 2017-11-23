@@ -1,7 +1,11 @@
-[[plugin]]
+[[plugins]]
+repo = 'zchee/deoplete-jedi'
+on_ft = ['python']
+
+[[plugins]]
 repo = 'lervag/vimtex'
 on_ft = ['tex']
 
-[[plugin]]
+[[plugins]]
 repo = 'thinca/vim-quickrun'
 on_ft = ['tex']
