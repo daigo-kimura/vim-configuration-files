@@ -1,17 +1,14 @@
+let g:python3_host_prog = expand('~/.pyenv/versions/3.6.2/bin/python3')
+
+source $HOME/.vim/vimrc/filetype.vim
 source $HOME/.vim/vimrc/dein.vim
 source $HOME/.vim/vimrc/template.vim
 source $HOME/.vim/vimrc/general.vim
 source $HOME/.vim/vimrc/indent.vim
 source $HOME/.vim/vimrc/keymapping.vim
 source $HOME/.vim/vimrc/appearance.vim
-source $HOME/.vim/vimrc/filetype.vim
 
-if has('nvim')
-  source $HOME/.vim/vimrc/deoplete.vim
-else
-  source $HOME/.vim/vimrc/neocomplete.vim
-endif
-
+source $HOME/.vim/vimrc/deoplete.vim
 source $HOME/.vim/vimrc/smartinput.vim
 source $HOME/.vim/vimrc/lightline.vim
 source $HOME/.vim/vimrc/nerdtree.vim

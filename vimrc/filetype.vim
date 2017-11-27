@@ -9,4 +9,5 @@ augroup filetypedetect
     au BufRead,BufNewFile *.swift     setfiletype swift
     au BufRead,BufNewFile *.py        setfiletype python
     au BufRead,BufNewFile *.tsv       setfiletype tsv
+    au BufRead,BufNewFile *.toml      setfiletype toml
 augroup END
