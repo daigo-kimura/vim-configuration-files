@@ -1,4 +1,4 @@
-let g:python3_host_prog = expand('~/.pyenv/versions/3.6.2/bin/python3')
+let g:python3_host_prog = expand('/usr/local/bin/python3')
 
 source $HOME/.vim/vimrc/filetype.vim
 source $HOME/.vim/vimrc/dein.vim
