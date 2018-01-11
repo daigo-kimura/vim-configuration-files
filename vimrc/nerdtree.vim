@@ -9,9 +9,36 @@ let g:NERDTreeShowHidden=1
 " let NERDTreeMinimalUI=1
 
 "
-let g:NERDTreeIgnore = ['^.git$', '^__pycache__$', '\.pyc$']
+let g:NERDTreeIgnore = [
+      \ '^.DS_Store$',
+      \ '^.DS_Store?$',
+      \ '^._*$',
+      \ '\.class$',
+      \ '\.com$',
+      \ '\.exe$',
+      \ '\.out$',
+      \ '\.so$',
+      \ '\.o$',
+      \ '^tags$',
+      \ '^.backup$',
+      \ '^.git$',
+      \ '^__pycache__$',
+      \ '^.undo$',
+      \ '\.7z$',
+      \ '\.dmg$',
+      \ '\.rar$',
+      \ '\.tar$',
+      \ '\.zip$',
+      \ '\.pyc$',
+      \ '\.un\~$',
+      \ '\.vim\~$',
+      \ '\.bak$',
+      \ '^Icon?$',
+      \ ]
 
-" Quit vim if the only remaining window is NerdTree
+" Quit vim/Close tab if the only remaining window is NerdTree
+let NERDTReeQuitOnOpen =1
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 let g:NERDTreeDirArrows=0
 let g:NERDTreeMouseMode=0
