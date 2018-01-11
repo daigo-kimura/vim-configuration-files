@@ -9,6 +9,7 @@ source $HOME/.vim/vimrc/keymapping.vim
 source $HOME/.vim/vimrc/appearance.vim
 
 source $HOME/.vim/vimrc/deoplete.vim
+source $HOME/.vim/vimrc/denite.vim
 source $HOME/.vim/vimrc/smartinput.vim
 source $HOME/.vim/vimrc/lightline.vim
 source $HOME/.vim/vimrc/nerdtree.vim
