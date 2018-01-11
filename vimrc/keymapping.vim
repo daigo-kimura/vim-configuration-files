@@ -23,7 +23,7 @@ noremap ; :
 " imap <ESC>OC <Right>
 " imap <ESC>OD <Left>
 
-" Virtical paste
+" Vertical paste
 vnoremap <C-p> I<C-r>"<ESC><ESC>
 
 " カーソルの強調表示
@@ -58,16 +58,10 @@ noremap <silent> <C-^> :<C-u>setlocal hlsearch!<CR>
 " noremap sv :vsplit<CR>
 
 " 分割されたウィンドウ間を移動
-" noremap <C-h> <C-w>h
-" noremap <C-j> <C-w>j
-" noremap <C-k> <C-w>k
-" noremap <C-l> <C-w>l
-
-" 分割されたウィンドウを移動
-" noremap sH <C-w>H
-" noremap sJ <C-w>J
-" noremap sK <C-w>K
-" noremap sL <C-w>L
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
 
 " タブ展開
 noremap <Leader>t :<C-u>tabedit<CR>
