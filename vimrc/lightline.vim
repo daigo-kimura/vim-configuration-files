@@ -15,7 +15,7 @@ let g:lightline = {
 function! AbsPath()
   let path = substitute(expand('%:p'), $HOME, '~', '')
   if path == ""
-    return '🗒'
+    return '🈳'
   elseif strlen(path) > 40
     return path[strlen(path) - 40:]
   else
