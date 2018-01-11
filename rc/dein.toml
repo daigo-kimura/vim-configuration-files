@@ -32,6 +32,9 @@ repo = 'scrooloose/nerdtree'
 repo = 'tpope/vim-surround'
 
 [[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
