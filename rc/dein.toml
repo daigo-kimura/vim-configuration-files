@@ -17,6 +17,9 @@ repo = 'Shougo/neoyank.vim'
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
+repo = 'Shougo/deol.nvim'
+
+[[plugins]]
 repo = 'szw/vim-tags'
 
 [[plugins]]
