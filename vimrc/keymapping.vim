@@ -69,3 +69,6 @@ noremap <Leader>t :<C-u>tabedit<CR>
 " タブ切り替え
 noremap ( gT
 noremap ) gt
+
+" vim-tag
+nnoremap <C-]> g<C-]>
