@@ -4,7 +4,7 @@ call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
       \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/',
       \   '.backup/', '.undo/',
       \   '.DS_Store', '.DS_Store?',
-      \   '*.class', '*.exe', '*.out', '*.pyc',
+      \   '*.class', '*.exe', '*.mo', '*.out', '*.pyc',
       \ ])
 
 call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>')
