@@ -57,4 +57,7 @@ repo = 'sjl/badwolf'
 repo = 'kana/vim-submode'
 
 [[plugins]]
+repo = 'thinca/vim-themis'
+
+[[plugins]]
 repo = 'daigo-kimura/annotation-vim'
