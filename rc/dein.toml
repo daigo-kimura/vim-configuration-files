@@ -8,6 +8,10 @@ repo = 'roxma/vim-hug-neovim-rpc'
 repo = 'Shougo/denite.nvim'
 
 [[plugins]]
+repo = 'nixprime/cpsm'
+build = 'env PY3=ON ./install.sh'
+
+[[plugins]]
 repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
