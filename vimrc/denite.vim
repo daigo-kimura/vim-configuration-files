@@ -11,3 +11,5 @@ call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
 
 call denite#custom#map('insert', '<C-k>', '<denite:move_to_previous_line>')
 call denite#custom#map('insert', '<C-j>', '<denite:move_to_next_line>')
+call denite#custom#map('insert', '<C-f>', '<denite:scroll_page_forwards>')
+call denite#custom#map('insert', '<C-b>', '<denite:scroll_page_backwards>')
