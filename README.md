@@ -1,4 +1,1 @@
-# VIM Preference Files
-
-## TODO
-
+# VIM Configuration files
