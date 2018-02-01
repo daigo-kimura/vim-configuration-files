@@ -1,4 +1,4 @@
-call denite#custom#source('file_rec', 'matchers', ['matcher_fuzzy','matcher_ignore_globs'])
+call denite#custom#source('_', 'matchers', ['matcher_cpsm'])
 call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
       \ [ '.git/', '.ropeproject/', '__pycache__/', 'node_modules/',
       \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/',
