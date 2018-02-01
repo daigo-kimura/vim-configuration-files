@@ -42,10 +42,11 @@ noremap <silent> <Leader>w :<C-u>w<CR>
 "
 noremap <silent> <Leader>q :<C-u>q<CR>
 
-" Unite/Denite
+" Denite
 noremap <silent> <Leader>d :<C-u>DeniteProjectDir<Space>file_rec<CR>
 noremap <silent> <Leader>r :<C-u>DeniteProjectDir<Space>file_mru<CR>
 noremap <silent> <Leader>u :<C-u>DeniteProjectDir<Space>-resume<CR>
+noremap <silent> <Leader>g :<C-u>DeniteProjectDir<Space>grep<CR>
 noremap <silent> <Leader>y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 
 noremap q: <Nop>
