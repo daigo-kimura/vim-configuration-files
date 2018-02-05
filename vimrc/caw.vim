@@ -1,2 +1,1 @@
-nmap <Leader>c <Plug>(caw:hatpos:toggle)
-vmap <Leader>c <Plug>(caw:hatpos:toggle)
+map <Leader>c <Plug>(caw:hatpos:toggle)
