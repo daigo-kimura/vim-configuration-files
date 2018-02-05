@@ -52,7 +52,7 @@ noremap <silent> <Leader>y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 noremap q: <Nop>
 
 " 検索結果ハイライト
-noremap <silent> <C-^> :<C-u>setlocal hlsearch!<CR>
+noremap <silent> <C-q> :<C-u>setlocal hlsearch!<CR>
 
 " ss, sv水平、垂直画面分割
 " noremap ss :split<CR>
