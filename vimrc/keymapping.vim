@@ -71,5 +71,22 @@ noremap <Leader>t :<C-u>tabedit<CR>
 noremap ( gT
 noremap ) gt
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Ale
+" Move to wrap
+map <silent> <C-u> <Plug>(ale_previous_wrap)
+map <silent> <C-y> <Plug>(ale_next_wrap)
+
+" caw.vim
+" Comment out
+map <Leader>c <Plug>(caw:hatpos:toggle)
+
+" NerdTree
+" Toggle Menu on the left
+nnoremap <silent> <f2> :<C-u>NERDTreeToggle<CR>
+
 " vim-tag
 nnoremap <C-]> g<C-]>

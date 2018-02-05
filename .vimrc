@@ -14,7 +14,6 @@ source $HOME/.vim/vimrc/smartinput.vim
 source $HOME/.vim/vimrc/lightline.vim
 source $HOME/.vim/vimrc/nerdtree.vim
 source $HOME/.vim/vimrc/ale.vim
-source $HOME/.vim/vimrc/caw.vim
 
 if filereadable(expand('$HOME/.vim/vimrc/ignore.vim'))
   source $HOME/.vim/vimrc/ignore.vim
