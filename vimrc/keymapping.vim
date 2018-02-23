@@ -1,8 +1,8 @@
 " Leaderを変更
 let g:mapleader=' '
 
-"ノーマルモード時Enterで改行
-"noremap <CR> o<esc>
+" Insert new line
+noremap <CR> o<esc>
 
 "ノーマルモード時SPACEで空白
 "noremap <Space> i<Space><esc>l
