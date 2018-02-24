@@ -90,3 +90,7 @@ nnoremap <silent> <f2> :<C-u>NERDTreeToggle<CR>
 
 " vim-tag
 nnoremap <C-]> g<C-]>
+
+"
+vmap <Enter> <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
