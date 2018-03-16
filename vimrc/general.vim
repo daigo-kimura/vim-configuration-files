@@ -70,6 +70,9 @@ set visualbell t_vb=
 " if not Markdown or Xml
 autocmd BufWritePre * call TrimBlankEndOfSentence()
 
+" Rename
+command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))
+
 function! TrimBlankEndOfSentence()
   if &filetype !~ '\(xml\|markdown\)'
     execute('%s/\s\+$//ge')
