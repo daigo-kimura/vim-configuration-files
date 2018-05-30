@@ -1,5 +1,5 @@
 "自動インデント
-set smartindent
+" set smartindent
 
 " filetypeのpluginによるindentをon
 filetype plugin indent on
