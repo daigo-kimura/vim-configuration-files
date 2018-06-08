@@ -2,9 +2,6 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'roxma/vim-hug-neovim-rpc'
-
-[[plugins]]
 repo = 'Shougo/denite.nvim'
 
 [[plugins]]
@@ -13,6 +10,7 @@ build = 'env PY3=ON ./install.sh'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
+if = "has('nvim')"
 
 [[plugins]]
 repo = 'Shougo/neoyank.vim'
@@ -22,6 +20,7 @@ repo = 'Shougo/neomru.vim'
 
 [[plugins]]
 repo = 'Shougo/deol.nvim'
+if = "has('nvim')"
 
 [[plugins]]
 repo = 'szw/vim-tags'
