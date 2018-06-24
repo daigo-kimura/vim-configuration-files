@@ -74,6 +74,12 @@ noremap <Leader>t :<C-u>tabedit<CR>
 noremap ( gT
 noremap ) gt
 
+
+if has("nvim")
+  " Command mode (ESC)
+  tnoremap <silent> <ESC> <C-\><C-n>
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
