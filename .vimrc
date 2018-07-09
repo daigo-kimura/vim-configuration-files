@@ -1,5 +1,3 @@
-let g:python3_host_prog = expand('/usr/local/bin/python3')
-
 source $HOME/.vim/vimrc/filetype.vim
 source $HOME/.vim/vimrc/dein.vim
 source $HOME/.vim/vimrc/template.vim

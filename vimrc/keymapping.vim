@@ -49,6 +49,9 @@ noremap <silent> <Leader>u :<C-u>DeniteProjectDir<Space>-resume<CR>
 noremap <silent> <Leader>g :<C-u>DeniteProjectDir<Space>grep<CR>
 noremap <silent> <Leader>y :<C-u>DeniteProjectDir<Space>neoyank<CR>
 
+" Deol
+noremap <silent> <Leader>e :<C-u>Deol<Space>-split<CR>
+
 noremap q: <Nop>
 
 " 検索結果ハイライト
@@ -70,6 +73,12 @@ noremap <Leader>t :<C-u>tabedit<CR>
 " タブ切り替え
 noremap ( gT
 noremap ) gt
+
+
+if has("nvim")
+  " Command mode (ESC)
+  tnoremap <silent> <ESC> <C-\><C-n>
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin
