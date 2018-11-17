@@ -33,8 +33,4 @@ else
   " colorscheme lucario
   " set background=dark
   colorscheme badwolf
-  if g:colors_name == 'badwolf'
-    execute 'hi Normal ctermfg=none'
-    execute 'hi Comment ctermfg=145'
-  endif
 endif
