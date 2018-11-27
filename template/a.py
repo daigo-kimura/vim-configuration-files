@@ -1,14 +1,8 @@
-import logging.config
-from logging import DEBUG
 import sys
-
-logger = logging.getLogger(__name__)
 
 
 def main(argv):
-    if "--debug" in argv:
-        for h in logger.root.handlers:
-            h.setLevel(DEBUG)
+    pass
 
 
 if __name__ == "__main__":
