@@ -19,7 +19,7 @@ function! LinterStatus() abort
   let l:all_non_errors = l:counts.total - l:all_errors
 
   return l:counts.total == 0 ? '👌' : printf(
-        \   '%d ❗  %d ☠',
+        \   '%d W  %d E ',
         \   all_non_errors,
         \   all_errors
         \)
@@ -30,7 +30,7 @@ set statusline=%{LinterStatus()}
 function! AbsPath()
   let path = substitute(expand('%:p'), $HOME, '~', '')
   if path == ""
-    return '🈳'
+    return 'New File'
   elseif strlen(path) > 40
     return path[strlen(path) - 40:]
   else
