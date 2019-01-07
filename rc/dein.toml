@@ -59,4 +59,10 @@ repo = 'kana/vim-submode'
 repo = 'thinca/vim-themis'
 
 [[plugins]]
+repo = 'thinca/vim-localrc'
+
+[[plugins]]
+repo = 'skywind3000/asyncrun.vim'
+
+[[plugins]]
 repo = 'daigo-kimura/annotation-vim'
