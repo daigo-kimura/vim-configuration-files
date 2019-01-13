@@ -74,22 +74,9 @@ autocmd BufWritePre * call TrimBlankEndOfSentence()
 command! -nargs=1 -complete=file Rename f <args>|call delete(expand('#'))
 
 function! TrimBlankEndOfSentence()
-  if &filetype !~ '\(xml\|markdown\)'
+  if &filetype !~ '\(tex|xml\|markdown\)'
     execute('%s/\s\+$//ge')
   endif
-endfunction
-
-" Local vimrc
-augroup vimrc-local
-  autocmd!
-  autocmd BufNewFile,BufReadPost * call s:vimrc_local(expand('<afile>:p:h'))
-augroup END
-
-function! s:vimrc_local(loc)
-  let files = findfile('.vimrc.local', escape(a:loc, ' ') . ';', -1)
-  for i in reverse(filter(files, 'filereadable(v:val)'))
-    source `=i`
-  endfor
 endfunction
 
 set foldmethod=indent
