@@ -42,6 +42,10 @@ set nottimeout
 " let g:loaded_matchparen=1
 hi MatchParen ctermbg=1
 
+if !isdirectory($HOME . "/.vim")
+  call mkdir($HOME . "/.vim")
+endif
+
 " Swap
 set noswapfile
 
